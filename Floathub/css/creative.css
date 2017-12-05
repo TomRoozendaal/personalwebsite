@@ -91,7 +91,7 @@ body {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -125,10 +125,10 @@ body {
       border-color: transparent;
       background-color: transparent; }
       #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-        color: #fff; }
+        color: #eee; }
       #mainNav .navbar-brand > img {
         height: 40px;
-        filter: brightness(1);}
+        filter: brightness(2);}
       #mainNav .navbar-nav > li.nav-item > a.nav-link {
         padding: 0.5rem 1rem; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -153,7 +153,7 @@ body {
 
 #Nav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #fff;
+  background-color: #eee;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
