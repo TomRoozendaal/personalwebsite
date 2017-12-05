@@ -287,13 +287,16 @@ header.masthead {
 
 .logo {
   max-height: 100px;
+  max-width: 80%;
   filter: brightness(100);}
 
 .blur {
   filter: blur(50px);}
 .antiblur{
   filter:blur(0px);
-  transition: 1s;}
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;}
 
 /*button stuffs*/
 .btn {
@@ -307,10 +310,11 @@ header.masthead {
   padding: 5px 10px;}
 
 .btn-xl {
-  padding: 20px 50px !important;
-  font-size: 150%;}
+  padding: 10px 20px !important;
+  font-size: 120%;
+  transition: 0.3s;}
   .btn-xl:hover, .btn-xl:focus, .btn-xl:active{
-    transform:  scale(1.15);
+    transform:  scale(1.2);
     transition: 0.3s;}
 
 .btn-primary {
