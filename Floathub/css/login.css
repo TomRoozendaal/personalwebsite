@@ -6,7 +6,7 @@ form {
 input[type=text], input[type=password] {
     width: 100%;
     padding: 10px 20px;
-    margin: 8px;
+    margin: 15px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 300px;

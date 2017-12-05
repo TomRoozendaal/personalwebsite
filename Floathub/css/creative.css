@@ -9,27 +9,24 @@ html {
   height: 100%;
   font-family:'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif; }
 
+#page-container {
+    min-height:100%;
+    position:relative;
+    height:100%;
+}
+
 ::-webkit-scrollbar {
-    width: 12px;
-    border-radius: 18px;
-}
-::-webkit-scrollbar-track {
-  background: #eee;
-  padding: 20px;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.25);
-  border-radius: 300px;
-  border: 2px solid #eee;
+    width: 0px;
 }
 
 footer {
   text-align: center;
   padding: 5px;
-  color: #eee;
-  background-color: rgba(0,0,0, 0.5);
-  font-weight: 700;
+  color: #666;
   font-family: 'Open Sans', 'Roboto Condensed', Arial, sans-serif;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
 }
 
 hr {
@@ -100,7 +97,7 @@ body {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   font-weight: 700;
-  padding: 0;}
+  padding: 5px 10px;}
   #mainNav .navbar-brand {
     text-transform: uppercase;
     color: #00DE8D;
@@ -162,7 +159,7 @@ body {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   font-weight: 700;
-  padding: 0;}
+  padding: 5px 10px;}
   #Nav .navbar-brand {
     text-transform: uppercase;
     color: #00DE8D;
@@ -288,6 +285,16 @@ header.masthead {
 .text-primary {
   color: #4CCD9E !important; }
 
+.logo {
+  max-height: 100px;
+  filter: brightness(100);}
+
+.blur {
+  filter: blur(50px);}
+.antiblur{
+  filter:blur(0px);
+  transition: 1s;}
+
 /*button stuffs*/
 .btn {
   margin: 5px;
@@ -301,7 +308,10 @@ header.masthead {
 
 .btn-xl {
   padding: 20px 50px !important;
-  font-size: 125%;}
+  font-size: 150%;}
+  .btn-xl:hover, .btn-xl:focus, .btn-xl:active{
+    transform:  scale(1.15);
+    transition: 0.3s;}
 
 .btn-primary {
   background-color: #4CCD9E;
