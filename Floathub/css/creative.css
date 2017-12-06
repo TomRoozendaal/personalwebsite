@@ -243,8 +243,7 @@ header.masthead {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
-  margin: 2px; }
+  max-width: 650px;}
   .portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -283,6 +282,12 @@ header.masthead {
       font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 22px; } }
+
+#portfolio {
+  margin: 10px 20px;}
+  @media (min-width: 992px) {
+    #portfolio {
+    margin: 100px 10%; } }
 
 .text-primary {
   color: #4CCD9E !important; }
