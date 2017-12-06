@@ -12,8 +12,17 @@ window.onclick = function(event) {
     $('.blur').addClass("antiblur");
 
   $( "#lform" ).submit(function( event ) {
-    alert( "Hihi goofy user, this function isn't working yet ;)" );
+    alert( "hihi silly user, this function isn't working yet ;)" );
     event.preventDefault();
+  });
+
+  $(".card").on('mouseenter', event => {
+    $("#home").addClass("darken");
+    $(event.currentTarget).removeClass("text-muted");
+  });
+  $(".card").on('mouseleave', event => {
+    $("#home").removeClass("darken");
+    $(event.currentTarget).addClass("text-muted");
   });
   // $('.hide-button').on('click', () => {
   //   $('.first-image').hide();
