@@ -8,9 +8,13 @@ window.onclick = function(event) {
     }
 }
 
-$(document).ready(() => {
-  $('.blur').addClass("antiblur");
+  $(document).ready(() => {
+    $('.blur').addClass("antiblur");
 
+  $( "#lform" ).submit(function( event ) {
+    alert( "Hihi goofy user, this function isn't working yet ;)" );
+    event.preventDefault();
+  });
   // $('.hide-button').on('click', () => {
   //   $('.first-image').hide();
   // });
