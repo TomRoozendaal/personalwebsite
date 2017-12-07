@@ -22,11 +22,11 @@ $(document).ready(() => {
   });
 
   $(".card").on('mouseenter', event => {
-    $("#home").addClass("darken");
+    $("#home-background").addClass("darken");
     $(event.currentTarget).removeClass("text-muted");
   });
   $(".card").on('mouseleave', event => {
-    $("#home").removeClass("darken");
+    $("#home-background").removeClass("darken");
     $(event.currentTarget).addClass("text-muted");
   });
 });
