@@ -30,3 +30,7 @@ $(document).ready(() => {
     $(event.currentTarget).addClass("text-muted");
   });
 });
+
+var titles = [];
+var notes = [];
+var dates = [];

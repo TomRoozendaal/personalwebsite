@@ -3,7 +3,7 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+input[name=uname], input[name=psw] {
     width: 100%;
     padding: 10px 20px;
     margin: 15px 0;
