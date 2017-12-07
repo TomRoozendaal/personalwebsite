@@ -7,7 +7,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-size: 14pt;
+  font-size: 11pt;
   font-family:'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;
   }
 
@@ -233,7 +233,6 @@ body {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  max-height: 500px;
   /*background-image: url("../img/header.jpg");*/
   background: #222;
   background: -webkit-linear-gradient(160deg, #222, #264546, #2d8064); /* For Safari 5.1 to 6.0 */
@@ -286,7 +285,7 @@ ol.cardtext{
 }
 
 .card-footer {
-  height: 60px;
+  height: 3rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -298,8 +297,8 @@ ol.cardtext{
   color: #4CCD9E;
 }
 
-.top-buffer { margin-top:24px; }
-.bottom-buffer { margin-bottom:24px; }
+.top-buffer { margin-top:2rem; }
+.bottom-buffer { margin-bottom:2rem; }
 
 .card-update {
 
@@ -326,6 +325,11 @@ ol.cardtext{
 
 .blur {
   filter: blur(50px);}
+  .blur:hover{
+    transform: scale(1.2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;}
 .antiblur {
   filter:blur(0px);
   -webkit-transition: all 1s;
