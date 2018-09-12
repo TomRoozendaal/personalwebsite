@@ -62,22 +62,22 @@ span.psw {
     border-radius: 20px;
     padding: 20px;
     overflow: hidden;}
-    .modal-content .container{
+    .modal-content .container {
         margin: 0 auto;
     }
 
 /* Add Zoom Animation */
 .animate {
-    -webkit-animation: animatesmudge 0.5s;
-    animation: animatesmudge 0.5s
+    -webkit-animation: slide 0.5s;
+    animation: slide 0.5s;
 }
 
-@-webkit-keyframes animatesmudge {
+@-webkit-keyframes slide {
     from {-webkit-transform: translateY(-50vh)}
     to {-webkit-transform: translateY(0)}
 }
 
-@keyframes animatesmudge {
+@keyframes slide {
     from {transform: translateY(-50vh)}
     to {transform: translateY(0)}
 }
