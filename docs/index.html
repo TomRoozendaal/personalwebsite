@@ -5,132 +5,72 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Personal page">
+  <meta name="author" content="Tom van Roozendaal">
 
-  <title>Floathub</title>
+  <title>Tom van Roozendaal - Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- personal -->
+  <link href="css/home.css" rel="stylesheet">
 
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/creative.css" rel="stylesheet">
-  <link href="css/login.css" rel="stylesheet">
+  <!-- fonts etc -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
 
 </head>
 
-<body id="page-top">
-  <!-- The Modal -->
-  <div id="id01" class="modal">
-    <!-- Modal Content -->
-    <form id="lform" class="modal-content animate text-primary" action="/action_page.php">
-      <!-- <div class="imgcontainer">
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div> -->
+<body>
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-      <label><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit" class="btn btn-secundary">Login</button>
-      <button type="button" class="btn btn-primary" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
-      <span class="psw"><a href="#">Forgot your password?</a></span>
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </form>
-</div>
+  </nav>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <!-- Page Content -->
   <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/Floathub.png" alt="floathub"></a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
+    <div class="row mt-3 ">
+      <div class="col-lg-6">
+        <h2 class="font-weight-bold mt-3">Tom van Roozendaal</h2>
+        <p class="lead">Computer science student at the University of Technology Eindhoven.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/sup.png" alt="whatsup?" id="profilepic">
+      </div>
+    </div>
 
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="explore.html">Home</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#">Contact</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" href="#" onclick="document.getElementById('id01').style.display='block'">Login</a>
-        </li>
-      </ul>
+    <div class="row">
+      <hr>
     </div>
   </div>
-</nav>
 
-<header class="masthead text-center text-white d-flex">
-  <div class="container my-auto">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <h1 class="text-uppercase blur">
-          <strong>Welcome to <br/> <img class="logo" src="img/Floathub.png" alt="floathub"></strong>
-        </h1>
-        <hr>
-      </div>
-      <div class="col-lg-8 mx-auto">
-        <p class="text-faded mb-5">A minimalistic platform to keep track of your ideas and thoughts by means of notes.<br/> Make an account! (But not today since that's not functional yet, perhaps tomorrow?)</p>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#page-top" onclick="document.getElementById('id01').style.display='block'" >Get started!</a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-heading">Let's Get In Touch!</h2>
-        <hr class="my-4">
-        <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 ml-auto text-center">
-        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-        <p>+316-69696969</p>
-      </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-        <p>
-          <a href="mailto:your-email@your-domain.com">smudgywudgy@outlook.com</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  Floathub, 2017<br/>2ID60
-</footer>
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/creative.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
