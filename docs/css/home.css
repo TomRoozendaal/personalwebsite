@@ -3,21 +3,16 @@
   --color1: #23a8e6;
   --color1-s2: #45b6eb;
   --color1-50a: rgba(34, 167, 230, 0.5);
-
   --color2: #bc4f4f;
   --color2-s2: #a84545;
-
   --color3: #3aaf3a;
   --color3-50a: rgba(58, 175, 58, 0.5);
-
   --dark: #222;
   --light: #eee;
-  --dark-border: 1px solid rgba(0, 0, 0, 0.3);
-  --light-border: 1px solid rgba(255, 255, 255, 0.4);
-
+  --dark-border: 2px solid rgba(0, 0, 0, 0.075);
+  --light-border: 2px solid rgba(255, 255, 255, 0.4);
   --text-color: #444;
   --text-color-light: #eee;
-
   --background: #333;
 }
 
@@ -29,25 +24,65 @@ html {
   font-size: 11pt;
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   background: #fff;
+  color: var(--text-color);
+  /* scroll-behavior: smooth; */
 }
 
 hr {
-  border-color: var(--light);
+  border-top: var(--dark-border);
+}
+
+/* ---------------- navbar edits ---------------- */
+.navbar-brand img {
+  max-width: 32px;
+  max-height: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+/* ---------------- Page container ---------------- */
+.page-offset {
+  margin-top: 76px;
+}
+
+.info-container {
+  margin: 5em;
 }
 
 /* ---------------- profile picture ---------------- */
 #pp-container {
-  /* flip image over x axis */
-  /* -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); */
   max-width: 200px;
-  border-right: 2px solid var(--light);
+  min-width: 200px;
+  border-right: var(--dark-border);
 }
 
 #pp-container img {
+  /* flip image over x axis */
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
   max-width: 128px;
   max-height: 128px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  /* border: var(--dark-border); */
+  -moz-transition: all .51s;
+  -o-transition: all .51s;
+  -webkit-transition: all .51s;
+  transition: all .51s;
+}
+
+#pp-container img:hover {
+  border-radius: 8%;
+  max-width: 154px;
+  max-height: 154px;
+}
+
+/* ---------------- projects ---------------- */
+.projects {
+  min-height: 500px;
+}
+
+.projects img {
+  object-fit: cover;
 }
