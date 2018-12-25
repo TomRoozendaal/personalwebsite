@@ -24,7 +24,7 @@
 <body>
   <a name="top"></a>
 
-  <!-- Navigation -->
+  <!-- NAV -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- <a class="navbar-brand" href="#">
@@ -55,7 +55,7 @@
   <!-- HOME -->
   <div class="page-offset container">
     <div class="container m-3 d-flex flex-row">
-      <div class="mr-4 pt-3" id="pp-container">
+      <div class="mr-4 pt-2" id="pp-container">
         <img src="img/tmr.jpg" alt="whatsup?">
         <p class="m-3 text-center">
           <b>Tom van Roozendaal</b> <br>
@@ -83,15 +83,16 @@
     <div class="projects" id="projects">
       <h3 class="font-weight-bold mt-4"><span class="bar">Projects</span></h3>
 
-      <div class="m-3 d-flex justify-content-center project">
+      <div class="m-3 d-flex justify-content-around project">
         <div class="p-2">
-          <h4>
-            <span class="font-weight-bold">--</span>
-          </h4>
-          <p>
+          <h4><span class="font-weight-bold">
+              GoofBall
+            </span></h4>
+          <p class="mr-5 lead">
+            The script running on the right here is an html5 canvas project called the <a href="https://github.com/TomRoozendaal/html5-canvas-projects/tree/master/gumball%20grid">Gumball Grid</a>. The grid is made up out of shapes that change their apperance and behaviour in accordance to the mouse. <br>
           </p>
         </div>
-        <div class="p-2">
+        <div id="gumball">
         </div>
       </div>
 
@@ -148,8 +149,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/p5.js"></script>
   <!-- personal js -->
   <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/gumball.js"></script>
 
 </body>
 

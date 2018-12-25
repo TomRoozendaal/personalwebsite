@@ -136,3 +136,9 @@ hr.smallruler {
 .soundcloud {
   min-width: 500px;
 }
+
+#sketch-holder {
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 12px;
+}
