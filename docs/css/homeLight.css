@@ -1,23 +1,19 @@
 /* ---------------- GLOBAL VARIABLES ---------------- */
 :root {
-  --color1: #28c;
-  --color1-s2: #45b6eb;
+  --color1: #23a8e6;
+  --color1-s2: #bae9ff;
   --color1-50a: rgba(34, 167, 230, 0.5);
   --color2: #bc4f4f;
   --color2-s2: #a84545;
   --color3: #3aaf3a;
   --color3-50a: rgba(58, 175, 58, 0.5);
   --dark: #222;
-  --nearly-black: #181818;
   --light: #eee;
-  --dark-border: 1px solid rgba(0, 0, 0, 0.075);
-  --light-border: 1px solid #383838;
-  --text-color: #c0c0c0;
+  --dark-border: 2px solid rgba(0, 0, 0, 0.075);
+  --light-border: 2px solid rgba(255, 255, 255, 0.4);
+  --text-color: #444;
   --text-color-light: #eee;
   --background: #333;
-
-  --navbar-light: #181818;
-  --navbar-light-text: #444;
 }
 
 /* ---------------- default html tags ---------------- */
@@ -27,51 +23,48 @@ html {
   height: 100%;
   font-size: 11pt;
   font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-
+  background: #fff;
   color: var(--text-color);
-  background-image: url("../img/bg.png");
-  background-repeat: repeat;
   /* scroll-behavior: smooth; */
 }
 
 hr {
-  border-top: var(--light-border);
+  border-top: var(--dark-border);
   width: 100%;
 }
 
 hr.smallruler {
-  border-top: var(--light-border);
+  border-top: var(--dark-border);
   width: 60%;
 }
 
 /* ---------------- text edits */
 .highlight {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 80%, var(--color1) 0%);
-
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 80%, var(--color1-50a) 0%);
   background-size: 500%;
   background-position: 0 0;
-  transition: background-position 0.6s ease-in-out,
-    color 0.2s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 
 .highlight:hover {
-  color: #fff;
   background-position: -25% 0;
-  transition: background-position 0.35s ease-in-out,
-    color 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .bar {
-  padding: .25em .5em;
-  background: var(--nearly-black);
-  border-radius: 12px;
-  border: var(--light-border);
-  transition: 0.2s ease-in-out;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 80%, var(--color1-s2) 0%);
+  background-size: 500%;
+  background-position: 0 0;
+  transition: 0.8s ease-in-out;
+  padding-left: .4em;
+  padding-right: .6em;
+  border-left: 3px solid var(--color1);
+  transition: 0.5s ease-in-out;
 }
 
 .bar:hover {
-  color: #fff;
-  transition: 0.2s ease-in-out;
+  background-position: -25% 0;
+  border-left: 6px solid var(--color1);
 }
 
 /* ---------------- navbar edits ---------------- */
@@ -83,9 +76,17 @@ hr.smallruler {
 }
 
 .navbar-dark.bg-dark {
-  color: var(--navbar-light-text) !important;
-  background-color: var(--nearly-black) !important;
-  border-bottom: var(--light-border);
+  background-color: #333 !important;
+}
+
+.nav-link {
+  color: #ccc !important;
+  transition: all .3s;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  margin-right: 0.2em;
 }
 
 /* ---------------- Page container ---------------- */
@@ -101,9 +102,7 @@ hr.smallruler {
 #pp-container {
   max-width: 200px;
   min-width: 200px;
-  border: var(--light-border);
-  border-radius: 12px;
-  background: var(--nearly-black);
+  border-right: var(--dark-border);
 }
 
 #pp-container img {
@@ -115,11 +114,8 @@ hr.smallruler {
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  border: 2px solid #333;
-  -moz-transition: all .51s;
-  -o-transition: all .51s;
-  -webkit-transition: all .51s;
-  transition: all .51s;
+  /* border: var(--dark-border); */
+  transition: all .4s;
 }
 
 #pp-container img:hover {

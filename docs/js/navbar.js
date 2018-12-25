@@ -13,7 +13,7 @@ $(document).ready(function () {
   $(id = "#navC").click((event) => {
     event.preventDefault();
     $('html, body').animate({
-      scrollTop: $(document).height() - window.innerWidth + navbarOffset
+      scrollTop: $(document).height() - window.innerHeight + navbarOffset
     }, 'slow');
   });
 
