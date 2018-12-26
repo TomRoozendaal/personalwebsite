@@ -1,8 +1,8 @@
 // -----------------------------------------------------
 // global variables
 
-let w = 320;
-let h = 320;
+let w = 270;
+let h = 270;
 let dots = [];
 let fps = false;
 let movingDot;
@@ -22,8 +22,8 @@ let bgColorAlpha = 0;
 // customizable variables
 
 // size / radius ( 0 - inf )
-let rad1 = 16;
-let rad2 = 18;
+let rad1 = 12;
+let rad2 = 16;
 let radd = 300;
 let radp = 4;
 
@@ -66,7 +66,7 @@ let ap = 5;
 
 // Corners ( 1 - inf )
 let corn1 = 3;
-let corn2 = 8;
+let corn2 = 6;
 let cornd = 300;
 let cornp = 2;
 
@@ -85,12 +85,12 @@ let rat2 = 0;
 let ratd = 0;
 let ratp = 1;
 
-let n = 20;
+let n = 19;
 let hex = true;
-let circleMask = 280.0;
+let circleMask = 210.0;
 let poly = true;
 let mouseTurn = true;
-let sinedot = true;
+let sinedot = false;
 let sinedotShow = false;
 let circleShow = false;
 let mouseTrigger = true;
@@ -283,6 +283,8 @@ class Dot {
     if (mouseTurn) {
       rotate(315 + v2.heading());
     }
+
+    fill(hue, sat, lum, alpha);
 
     if (poly) {
       polygon(0, 0, radius * 0.7, corners);
@@ -479,8 +481,8 @@ function polygon(x, y, pRadius, npoints) {
 // resize function
 
 window.addEventListener('resize', function () {
-  w = canvas.width = window.innerWidth;
-  h = canvas.height = window.innerHeight;
+  // w = canvas.width = window.innerWidth;
+  // h = canvas.height = window.innerHeight;
   dots = [];
   setup();
 })

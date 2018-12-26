@@ -22,8 +22,6 @@
 </head>
 
 <body>
-  <a name="top"></a>
-
   <!-- NAV -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -53,8 +51,8 @@
   </nav>
 
   <!-- HOME -->
-  <div class="page-offset container">
-    <div class="container m-3 d-flex flex-row">
+  <div class="page-offset">
+    <div class="container d-flex flex-row mb-4">
       <div class="mr-4 pt-2" id="pp-container">
         <img src="img/tmr.jpg" alt="whatsup?">
         <p class="m-3 text-center">
@@ -75,21 +73,22 @@
 
 
     <!-- RULER -->
-    <div class="ml-5 mr-5">
-      <hr>
-    </div>
+    <div class="hyper-down"></div>
 
     <!-- PROJECTS -->
-    <div class="projects" id="projects">
-      <h3 class="font-weight-bold mt-4"><span class="bar">Projects</span></h3>
+    <div class="projects container" id="projects">
+      <h3 class="font-weight-bold mt-4"><span class="bar" id="project-header">Projects</span></h3>
 
       <div class="m-3 d-flex justify-content-around project">
         <div class="p-2">
-          <h4><span class="font-weight-bold">
-              GoofBall
-            </span></h4>
+          <h4>
+            <b>Gumball Grid</b>, Wallpaper Engine
+          </h4>
           <p class="mr-5 lead">
-            The script running on the right here is an html5 canvas project called the <a href="https://github.com/TomRoozendaal/html5-canvas-projects/tree/master/gumball%20grid">Gumball Grid</a>. The grid is made up out of shapes that change their apperance and behaviour in accordance to the mouse. <br>
+            The script on the right is a snippet of an html5 canvas project called the <a href="https://github.com/TomRoozendaal/html5-canvas-projects/tree/master/gumball%20grid">Gumball Grid</a>. The grid is made up out of shapes that change their apperance and behaviour in accordance to the position of the mouse pointer. <br><br>
+
+            The project is picked from a set of projects made for <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/"> Wallpaper Engine</a>, an application that allows its users to run webpages as a wallpaper.
+            More projects for this program made by me can be found on <a href="https://steamcommunity.com/id/smudgywudgy/myworkshopfiles/">Steam</a> or <a href="https://github.com/TomRoozendaal/html5-canvas-projects">Github.</a>
           </p>
         </div>
         <div id="gumball">
@@ -105,9 +104,9 @@
           <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4218687&color=%2323a8e6&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
         </div>
         <div class="p-2">
-          <h4 class="font-weight-bold">Music</h4>
-          <p>
-            A hobby.
+          <h4><b>Smudge</b>, Music</h4>
+          <p class="lead">
+            A hobby of mine is to create music. It mostly consists of computer aided electronic music.
           </p>
         </div>
       </div>
@@ -115,26 +114,34 @@
     </div>
 
     <!-- RULER -->
-    <div class="ml-5 mr-5">
-      <hr>
-    </div>
+    <div class="hyper-up"></div>
 
     <!-- CONTACT -->
-    <div class="contact mb-5" id="contact">
-      <div class="p-2">
-        <h3 class="font-weight-bold"><span class="bar">Contact</span></h3>
-        <table class="ml-5 mt-1">
-          <tr>
-            <td>Mail
-            </td>
-            <td><a href="mailto: t.v.roozendaal@student.tue.nl">t.v.roozendaal@student.tue.nl</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Github: &nbsp;</td>
-            <td><a href="https://github.com/TomRoozendaal">TomRoozendaal</a></td>
-          </tr>
-        </table>
+    <div class="container contact mb-5 mt-3" id="contact">
+      <h3 class="font-weight-bold"><span class="bar" id="contact-header">Contact</span></h3>
+      <table class="ml-5 mt-1">
+        <tr>
+          <td>Mail (TU/e)
+          </td>
+          <td><a href="mailto: t.v.roozendaal@student.tue.nl">t.v.roozendaal@student.tue.nl</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="pr-3">Mail (personal)
+          </td>
+          <td><a href="mailto: tomvroozendaal@live.nl">tomvroozendaal@live.nl</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Github</td>
+          <td><a href="https://github.com/TomRoozendaal">TomRoozendaal</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footer">
+      <div class="d-flex pt-2 pr-5 justify-content-end">
+        <small>Tom van Roozendaal, 2018</small>
       </div>
     </div>
   </div>
@@ -152,6 +159,7 @@
   <script src="js/p5.js"></script>
   <!-- personal js -->
   <script type="text/javascript" src="js/navbar.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
   <script type="text/javascript" src="js/gumball.js"></script>
 
 </body>

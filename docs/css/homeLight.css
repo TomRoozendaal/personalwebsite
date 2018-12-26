@@ -2,6 +2,7 @@
 :root {
   --color1: #23a8e6;
   --color1-s2: #bae9ff;
+  --color1-s3: #0f7daf;
   --color1-50a: rgba(34, 167, 230, 0.5);
   --color2: #bc4f4f;
   --color2-s2: #a84545;
@@ -28,14 +29,53 @@ html {
   /* scroll-behavior: smooth; */
 }
 
+a {
+  color: var(--color1);
+}
+
+a:hover {
+  color: var(--color1-s3);
+}
+
 hr {
   border-top: var(--dark-border);
   width: 100%;
+  margin-top: 0;
 }
 
 hr.smallruler {
   border-top: var(--dark-border);
   width: 60%;
+}
+
+.hyper-down {
+  height: 20px;
+  border-top: 2px solid #00000080;
+
+  background-image: url(../img/dia_pat.png);
+  opacity: 0.075;
+
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0));
+
+  -moz-box-shadow: inset 0 5px 10px -2px #000000;
+  -webkit-box-shadow: inset 0 5px 10px -2px #000000;
+  box-shadow: inset 0 5px 10px -2px #000000;
+}
+
+.hyper-up {
+  height: 20px;
+  border-bottom: 2px solid #00000080;
+
+  background-image: url(../img/dia_pat.png);
+  opacity: 0.075;
+
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+  -moz-box-shadow: inset 0 -5px 10px -2px #000000;
+  -webkit-box-shadow: inset 0 -5px 10px -2px #000000;
+  box-shadow: inset 0 -5px 10px -2px #000000;
 }
 
 /* ---------------- text edits */
@@ -57,12 +97,12 @@ hr.smallruler {
   background-position: 0 0;
   transition: 0.8s ease-in-out;
   padding-left: .4em;
-  padding-right: .6em;
+  padding-right: 1em;
   border-left: 3px solid var(--color1);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.bar:hover {
+.bar-on {
   background-position: -25% 0;
   border-left: 6px solid var(--color1);
 }
@@ -89,13 +129,20 @@ hr.smallruler {
   margin-right: 0.2em;
 }
 
-/* ---------------- Page container ---------------- */
+/* ---------------- Basic page elements ---------------- */
 .page-offset {
   margin-top: 76px;
 }
 
 .info-container {
   margin: 5em;
+}
+
+.footer {
+  bottom: 0;
+  height: 28px;
+  background-color: #ddd;
+  vertical-align: middle;
 }
 
 /* ---------------- profile picture ---------------- */
