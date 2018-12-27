@@ -181,7 +181,7 @@ hr.smallruler {
 }
 
 /* phones */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #pp-container {
     border-right: 0;
 
