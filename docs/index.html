@@ -15,6 +15,7 @@
 
   <!-- personal css -->
   <link href="css/homeLight.css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
   <!-- fonts etc -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet">
@@ -26,7 +27,7 @@
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
     <div class="container">
       <!-- <a class="navbar-brand" href="#">
-        <img src="img/sup.png" alt="">
+        <img src="img/logo.png" alt="">
       </a> -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,9 +53,9 @@
 
   <!-- HOME -->
   <div class="page-offset">
-    <div class="container d-flex flex-row mb-4">
-      <div class="mr-4 pt-2" id="pp-container">
-        <img src="img/tmr.jpg" alt="whatsup?">
+    <div class="container d-md-flex mb-4" id="bio">
+      <div class="mr-4 pt-2 text-center" id="pp-container">
+        <img src="img/tmr.jpg" alt="">
         <p class="m-3 text-center">
           <b>Tom van Roozendaal</b> <br>
           Computer Science, Mathematics, Art
@@ -65,12 +66,11 @@
         <p class="lead">
           Welcome to my personal page. Here's some of
           the projects I've worked on, or just some of the goofy
-          stuff I've made in my liesure time. <br><br>
+          stuff I've made in my leisure time. <br><br>
           I'm currently studying Computer Science at the University of Technology in Eindhoven, the Netherlands.
         </p>
       </div>
     </div>
-
 
     <!-- RULER -->
     <div class="hyper-down"></div>
@@ -79,35 +79,35 @@
     <div class="projects container" id="projects">
       <h3 class="font-weight-bold mt-4"><span class="bar" id="project-header">Projects</span></h3>
 
-      <div class="m-3 d-flex justify-content-around project">
+      <div class="m-3 d-md-flex project">
         <div class="p-2">
           <h4>
             <b>Gumball Grid</b>, Wallpaper Engine
           </h4>
-          <p class="mr-5 lead">
-            The script on the right is a snippet of an html5 canvas project called the <a href="https://github.com/TomRoozendaal/html5-canvas-projects/tree/master/gumball%20grid">Gumball Grid</a>. The grid is made up out of shapes that change their apperance and behaviour in accordance to the position of the mouse pointer. <br><br>
+          <p class="lead">
+            The script shown here is a snippet of an html5 canvas project called the <a href="https://github.com/TomRoozendaal/html5-canvas-projects/tree/master/gumball%20grid">Gumball Grid</a>. The grid is made up out of shapes that change their appearance and behaviour in accordance to the position of the mouse pointer. <br><br>
 
             The project is picked from a set of projects made for <a href="https://store.steampowered.com/app/431960/Wallpaper_Engine/"> Wallpaper Engine</a>, an application that allows its users to run webpages as a wallpaper.
             More projects for this program made by me can be found on <a href="https://steamcommunity.com/id/smudgywudgy/myworkshopfiles/">Steam</a> or <a href="https://github.com/TomRoozendaal/html5-canvas-projects">Github.</a>
           </p>
         </div>
-        <div id="gumball">
+        <div class="p-2 text-center align-self-center" id="gumball">
         </div>
       </div>
 
       <div>
-        <hr class="smallruler">
+        <hr>
       </div>
 
-      <div class="m-3 d-flex justify-content-center project">
-        <div class="p-2 soundcloud">
-          <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4218687&color=%2323a8e6&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-        </div>
-        <div class="p-2">
+      <div class="m-3 d-md-flex project">
+        <div class="p-3">
           <h4><b>Smudge</b>, Music</h4>
           <p class="lead">
             A hobby of mine is to create music. It mostly consists of computer aided electronic music.
           </p>
+        </div>
+        <div class="p-2 soundcloud">
+          <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/4218687&color=%2323a8e6&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe>
         </div>
       </div>
 
@@ -140,7 +140,7 @@
     </div>
 
     <div class="footer">
-      <div class="d-flex pt-2 pr-5 justify-content-end">
+      <div class="d-flex pt-1 pr-5 justify-content-end">
         <small>Tom van Roozendaal, 2018</small>
       </div>
     </div>

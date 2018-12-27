@@ -140,16 +140,18 @@ hr.smallruler {
 
 .footer {
   bottom: 0;
-  height: 28px;
-  background-color: #ddd;
-  vertical-align: middle;
+  height: 26px;
+  background-color: #f0f0f0;
+  color: #888;
+
+  border-top: var(--dark-border);
 }
 
 /* ---------------- profile picture ---------------- */
 #pp-container {
-  max-width: 200px;
-  min-width: 200px;
   border-right: var(--dark-border);
+  max-width: 200px;
+  min-width: 200px
 }
 
 #pp-container img {
@@ -165,10 +167,45 @@ hr.smallruler {
   transition: all .4s;
 }
 
-#pp-container img:hover {
-  border-radius: 8%;
-  max-width: 154px;
-  max-height: 154px;
+/* desktop */
+@media (min-width: 768px) {
+  #bio {
+    max-width: 70%;
+  }
+
+  #pp-container img:hover {
+    border-radius: 8%;
+    max-width: 154px;
+    max-height: 154px;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 768px) {
+  #pp-container {
+    border-right: 0;
+
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #pp-container img {
+    /* flip image over x axis */
+    /* -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); */
+    max-width: 240px;
+    max-height: 240px;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+    /* border: var(--dark-border); */
+    transition: all 0s;
+  }
+
+  .soundcloud {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 /* ---------------- projects ---------------- */
@@ -181,11 +218,12 @@ hr.smallruler {
 }
 
 .soundcloud {
-  min-width: 500px;
+  min-width: 50%;
+  max-width: 80%;
+  max-height: 350px;
 }
 
 #sketch-holder {
   max-width: 320px;
   max-height: 320px;
-  border-radius: 12px;
 }

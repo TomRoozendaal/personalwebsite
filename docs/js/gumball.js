@@ -331,6 +331,7 @@ class Dot {
 
 // p5 setup() and draw()
 function setup() {
+  frameRate(30);
   let canvas = createCanvas(w, h);
   // Move the canvas so it’s inside our <div id="sketch-holder">.
   canvas.parent('gumball');
