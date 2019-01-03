@@ -117,6 +117,7 @@ hr.smallruler {
 
 .navbar-dark.bg-dark {
   background-color: #333 !important;
+  height: 50px;
 }
 
 .nav-link {
@@ -131,7 +132,7 @@ hr.smallruler {
 
 /* ---------------- Basic page elements ---------------- */
 .page-offset {
-  margin-top: 76px;
+  margin-top: 50px;
 }
 
 .info-container {
@@ -147,7 +148,12 @@ hr.smallruler {
   border-top: var(--dark-border);
 }
 
-/* ---------------- profile picture ---------------- */
+/* ---------------- TOP ---------------- */
+#header {
+  width: 100%;
+  height: 240px;
+}
+
 #pp-container {
   border-right: var(--dark-border);
   max-width: 200px;
@@ -171,6 +177,7 @@ hr.smallruler {
 @media (min-width: 768px) {
   #bio {
     max-width: 70%;
+    z-index: 1;
   }
 
   #pp-container img:hover {
@@ -223,7 +230,7 @@ hr.smallruler {
   max-height: 350px;
 }
 
-#sketch-holder {
-  max-width: 320px;
-  max-height: 320px;
+#gumball {
+  min-width: 320px;
+  height: 320px;
 }

@@ -1,8 +1,8 @@
 // -----------------------------------------------------
 // global variables
 
-let w = 270;
-let h = 270;
+let w = window.innerWidth;
+let h = window.innerHeight;
 let dots = [];
 let fps = false;
 let movingDot;
@@ -332,9 +332,7 @@ class Dot {
 // p5 setup() and draw()
 function setup() {
   frameRate(30);
-  let canvas = createCanvas(w, h);
-  // Move the canvas so it’s inside our <div id="sketch-holder">.
-  canvas.parent('gumball');
+  createCanvas(w, h);
   angleMode(DEGREES);
   rectMode(CENTER);
 
@@ -482,8 +480,8 @@ function polygon(x, y, pRadius, npoints) {
 // resize function
 
 window.addEventListener('resize', function () {
-  // w = canvas.width = window.innerWidth;
-  // h = canvas.height = window.innerHeight;
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
   dots = [];
   setup();
 })
