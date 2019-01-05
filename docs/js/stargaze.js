@@ -4,7 +4,6 @@ function setup() {
   w = window.innerWidth;
   h = window.innerHeight;
   n = floor((w * h) / 3000);
-  console.log(n);
   origin = createVector(w / 2, 0);
   setupMouseVec();
   followVec = mouseVec.copy();
@@ -16,7 +15,8 @@ function setup() {
   createCanvas(w, h);
   noStroke();
   noiseDetail(4, 0.5);
-  //tryWallpaperApi();
+
+  textFont("Montserrat");
 }
 
 function draw() {
@@ -61,35 +61,15 @@ function draw() {
 
   setStars();
 
-  // draw page information
-  if (reference) {
-    textSize(12);
-    textAlign(CENTER, CENTER);
-
-    // bass
-    noStroke();
-    fill(50);
-    rect(w - 42, 10, 32, 200);
-    fill(255);
-    rect(w - 42, 10, 32, bass * 200);
-
-    // mouseVec
-    const x = w - 26;
-    const y = 236;
-    fill(50);
-    ellipse(x, y, 32, 32);
-    stroke(120);
-    fill(120);
-    strokeWeight(2);
-    ellipse(x, y, 4, 4);
-    strokeCap(ROUND);
-    line(x, y, x + 16 * mouseVec.x, y + 16 * mouseVec.y)
-
-    // stars
-    fill(180);
-    noStroke();
-    text(stars.length, x, y + 32);
-    text("stars", x, y + 48);
+  // // draw header text
+  // textSize(48);
+  // textAlign(CENTER, CENTER);
+  // textStyle(BOLD);
+  // fill(255, 50);
+  // noStroke();
+  // text("Portofolio", w / 2, h / 2);
+  if (frameCount % 60 == 0) {
+    turbo();
   }
 }
 
@@ -160,24 +140,16 @@ function randn_bm() {
   return num;
 }
 
-function mouseMoved() {
+function turbo() {
   for (let i = 0; i < stars.length; i++) {
     stars[i].turbo = 1;
   }
 }
 
-function tryWallpaperApi() {
-  let aArr = [];
-  for (let i = 0; i < 128; i++) {
-    aArr[i] = random(0, 2);
-  }
-  wallpaperAudioListener(aArr);
-  console.table(audArr);
-}
 // resize function
 window.addEventListener('resize', function () {
-  w = canvas.width = window.innerWidth;
-  h = canvas.height = window.innerHeight;
+  w = window.innerWidth;
+  h = window.innerHeight;
   stars = [];
   setup();
 })
