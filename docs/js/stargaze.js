@@ -16,7 +16,7 @@ function setup() {
   noStroke();
   noiseDetail(4, 0.5);
 
-  textFont("Montserrat");
+  textFont("Raleway");
 }
 
 function draw() {
@@ -61,16 +61,24 @@ function draw() {
 
   setStars();
 
-  // // draw header text
-  // textSize(48);
-  // textAlign(CENTER, CENTER);
-  // textStyle(BOLD);
-  // fill(255, 50);
-  // noStroke();
-  // text("Portofolio", w / 2, h / 2);
-  if (frameCount % 60 == 0) {
-    turbo();
-  }
+  // draw header text
+  textSize(48);
+  textAlign(CENTER, CENTER);
+  textStyle(BOLD);
+  fill(255, 255);
+  stroke(34);
+  strokeWeight(2);
+  let yText = 10 * sin((frameCount / 60) * 180);
+  turboSpeed = 2 * (cos((frameCount / 30) * 180) + 1);
+  text("welcome!", w / 2, (h / 2) - 3 + yText);
+  turbo();
+
+  let col = color("#23a8e6");
+  fill(col);
+  noStroke();
+  rect(0, h - 6, w, h);
+  //#23a8e6
+  //#0f7daf
 }
 
 // ----------------------- other methods -----------------------

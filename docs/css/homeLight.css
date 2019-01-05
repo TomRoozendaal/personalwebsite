@@ -29,6 +29,12 @@ html {
   /* scroll-behavior: smooth; */
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+}
+
 a {
   color: var(--color1);
 }
@@ -117,7 +123,6 @@ hr.smallruler {
 
 .navbar-dark.bg-dark {
   background-color: #333 !important;
-  height: 50px;
 }
 
 .nav-link {
@@ -229,6 +234,10 @@ hr.smallruler {
     transition: all 0s;
   }
 
+  .project {
+    color: var(--text-color) !important;
+  }
+
   .soundcloud {
     min-width: 100% !important;
     max-width: 100% !important;
@@ -244,6 +253,16 @@ hr.smallruler {
   object-fit: cover;
 }
 
+.project {
+  color: #888;
+  transition: 0.1s ease-in-out;
+}
+
+.project:hover {
+  color: var(--text-color);
+  transition: 0.1s ease-in-out;
+}
+
 .soundcloud {
   min-width: 50%;
   max-width: 80%;
@@ -251,6 +270,6 @@ hr.smallruler {
 }
 
 #gumball {
-  min-width: 320px;
-  height: 320px;
+  min-width: 300px;
+  height: 300px;
 }
