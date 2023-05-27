@@ -1,2 +1,1 @@
-# webtechnology
-Web technology
+# Personal Website
