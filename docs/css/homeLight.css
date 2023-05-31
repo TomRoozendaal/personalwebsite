@@ -191,7 +191,7 @@ hr.smallruler {
   transform: scaleX(-1); */
   max-width: 140px;
   max-height: 140px;
-  border-radius: 50%;
+  border-radius: 10%;
   display: block;
   margin: 0 auto;
   /* border: var(--dark-border); */
@@ -206,7 +206,7 @@ hr.smallruler {
   }
 
   #pp-container img:hover {
-    border-radius: 8%;
+    border-radius: 10%;
     max-width: 154px;
     max-height: 154px;
   }
@@ -272,4 +272,6 @@ hr.smallruler {
 #gumball {
   min-width: 300px;
   height: 300px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
 }
